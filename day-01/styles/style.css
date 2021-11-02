@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+html * {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: #fafaff;
+}
+
+.copy {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  font-size: 12px;
+}
+
+.copy a {
+  color: #fc4346;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.main {
+  padding: 2.5em 3.5em 3.5em;
+  background: white;
+}
+
+.main-header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1.25em;
+}
+
+.main-header h1 {
+  color: #fc4346;
+}
+
+.main-header p {
+  font-size: 12px;
+}
+
+.main-header .sm-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+}
+
+.main-header .sm-buttons button {
+  display: grid;
+  place-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid gray;
+}
+
+.main-header .sm-buttons button:hover {
+  cursor: pointer;
+  background: #fca491;
+  border: 1px solid #fca491;
+  color: white;
+}
+
+.main-content {
+  margin-top: 1.5em;
+}
+
+.main-content .form {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  gap: 0.5em;
+}
+
+.main-content .form-control {
+  padding: 0.75em;
+  border-radius: 0.25em;
+  border: 1px solid #cecece;
+  background: #f0f0f0;
+}
+
+.main-content .form label {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.main-content .form label a {
+  color: #fc4346;
+  text-decoration: none;
+}
+
+.main-content .form label a:hover {
+  text-decoration: underline;
+}
+
+.main-content .btn-group {
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.main-content .btn-group > * {
+  flex: 1;
+  text-align: center;
+}
+
+.sidebar {
+  min-width: 250px;
+  background: url("../img/pattern.jpg") repeat left/175%;
+}
+
+.cta {
+  border: 1.5px solid #fc4346;
+  background: #fc4346;
+  color: white;
+  font-size: 14px;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background: #e4080b;
+  border: 1px solid #e4080b;
+}
+
+.cta-outline {
+  color: #fc4346;
+  background: unset;
+}
+
+.cta-outline:hover {
+  background: #fc4346;
+  color: white;
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sidebar {
+    height: 100px;
+    min-width: 250px;
+    background: url("../img/pattern.jpg") repeat center 10%/120%;
+  }
+  .main {
+    padding: 2.5em 3.5em 3.5em;
+    background: white;
+  }
+  .main-content .btn-group {
+    margin-top: 0.5em;
+    display: flex;
+    flex-flow: column;
+    gap: 0.5em;
+  }
+  .main-content .btn-group > * {
+    flex: 1;
+    text-align: center;
+  }
+}
