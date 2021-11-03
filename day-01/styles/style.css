@@ -73,8 +73,8 @@ body {
 
 .main-header .sm-buttons button:hover {
   cursor: pointer;
-  background: #fca491;
-  border: 1px solid #fca491;
+  background: black;
+  border: 1px solid black;
   color: white;
 }
 
@@ -138,11 +138,6 @@ body {
   border-radius: 0.25em;
   text-decoration: none;
   cursor: pointer;
-}
-
-.cta:hover {
-  background: #e4080b;
-  border: 1px solid #e4080b;
 }
 
 .cta-outline {
